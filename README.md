@@ -1,2 +1,3 @@
-# simple-app-width-mvc
+# simple-app-with-mvc
 使用JavaScript MVC 模式开发的简单 app
+##API:
