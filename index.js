@@ -45,7 +45,7 @@ var app = miApp(window);
   		    };
 
   		   this.rebuild = function(){
-  		   		var items = this.model.getItem(), // return array
+  		   		var items = this.model.getItem(), 
   		   		    len = items.length,
   		   		    dom = document.createDocumentFragment(),
   		   		    ul = this.elements.ul,
@@ -75,7 +75,7 @@ var app = miApp(window);
   		    });
 
 
-  		    this.elements.add.on('click',function(event){  //  使用view事件
+  		    this.elements.add.on('click',function(event){  
   		    		self.addEvent.notify(event);
   		    });
 
