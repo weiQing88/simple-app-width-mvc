@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>practice</title>
+	<link rel="stylesheet" href="base.css" />
+	<style>
+	html *{font-size:0.14rem;}
+     .border-dad1d1{
+     	 border:1px solid #dad1d1;
+     }
+	 #addItemform input{
+		width: 40%;
+		padding: 0 1%;
+		height: 40px;
+		border:1px solid #ddd;
+		border-radius: 5px;
+	 }
+	#addItemform button{
+	  width: 10%;
+	  height: 40px;
+	  line-height: 40px;
+	  background-color: #393d86;
+	 border-radius: 5px;
+	 cursor: pointer;
+	 color: #fff;
+	}
+
+	 #addItemform button:hover{background-color: #141ca2;}
+
+	ul.col-6 li{
+      height: 40px;
+      line-height: 40px;
+      color: #949494;
+      padding: 0 3%;
+	}
+   ul.col-6 li:hover{
+   	  background-color: #ddd;
+   	  color: #fff;
+   }	
+   .button{
+   	 display: inline-block;
+   	 width: 10%;
+   	 height: 40px;
+   	 line-height: 40px;
+   	 background-color:#dca6a6;  
+   	 color: #FFF;
+   	 text-align: center;
+   } 
+   .button:hover{ background-color:#dc6060;}
+   span.col-4 strong{display: block; font-size: 20px; color:#fff; padding: 20px 0;}
+   .bg-dd{ background-color: #e24e4e; }
+	</style>
+</head>
+<body>
+<div class="container txt-center">
+<div class="row">
+    <span class="col-4 offset-1 bg-dd text-center"><strong>TODO</strong></span>
+	<div class="col-4 offset-1 border-dad1d1">
+		 <div class="row">
+	        <span class="col-6 txt-left">
+	        <a href="javascript:void(0)" data-route='/home?t=1&k=2' class="button">便签</a>
+	        <a href="javascript:void(0)" data-route='/list' class="button">已经查阅</a>
+	        <a href="javascript:void(0)" data-route='/detail' class="button">已删除</a>
+	        </span>
+	         <span class="col-6">
+      	   	  <form id="addItemform" class="clearfix txt-left">
+      	   	  	<input type="text" placeholder="input item" id="inputTxt" />
+      	   	  	  <button type="button" class="addItemBtn">添加</button>
+      	   	  </form>
+      	   </span> 
+      	     <ul class="col-6 txt-left">
+     	  	   <li>~~Nan~~</li>
+     	     </ul> 
+	    </div>	 
+	</div>
+</div>
+
+
+</div>
+<script src="../jquery-1.11.3.min.js"></script>
+<script src="core.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
